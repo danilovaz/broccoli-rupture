@@ -8,28 +8,18 @@
 'use strict';
 
 var Plugin = require('broccoli-plugin');
-var RSVP = require('rsvp');
 var rupt = require('rupture');
-
-function RuptureFilter(inputTree, options) {
-  if (!(this instanceof RuptureFilter)) {
-    console.log("Alpha");
-    return new RuptureFilter(inputTree, options);
-  }
-
-  this.inputTree = inputTree;
-  this.options = options || {};
-
-}
 
 RuptureFilter.prototype = Object.create(Plugin.prototype);
 RuptureFilter.prototype.constructor = RuptureFilter;
 
-RuptureFilter.prototype.extensions = ['styl'];
-RuptureFilter.prototype.targetExtension = 'styl';
+function RuptureFilter(inputNode) {
+  if (!(this instanceof RuptureFilter)) return new RuptureFilter(inputNode);
+  Plugin.call(this, [inputNode]);
+}
 
-RuptureFilter.prototype.processString = function(str) {
-  return rupt.rupture();
+RuptureFilter.prototype.build = function() {
+  // Build from this.inputPaths[0] to this.outputPath
 };
 
 module.exports = RuptureFilter;

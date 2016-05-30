@@ -3,7 +3,7 @@ var path = require('path');
 var fs = require('fs');
 var stylus = require('stylus');
 var parse = require('css-parse');
-var rupture = require('../');
+var rupture = require('rupture');
 var test_path = path.join(__dirname, 'fixtures');
 var should = chai.should();
 
