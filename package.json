@@ -1,0 +1,47 @@
+{
+  "name": "broccoli-rupture",
+  "version": "0.0.1",
+  "description": "simple media queries in stylus",
+  "license": "MIT",
+  "main": "index.js",
+  "author": {
+    "name": "Danilo Vaz",
+    "email": "danilovaz@hotmail.com.br",
+    "url": "http://danilovaz.github.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/danilovaz/broccoli-rupture.git"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "broccoli build temp && mocha"
+  },
+  "keywords": [
+    "broccoli-plugin",
+    "broccoli",
+    "ember-cli",
+    "rupture",
+    "media-queries",
+    "css",
+    "stylus"
+  ],
+  "dependencies": {
+    "broccoli-plugin": "^1.2.0",
+    "rupture": "0.6.1",
+    "chai": "1.x",
+    "css-parse": "2.x",
+    "mocha": "2.x",
+    "stylus": "0.49.x"
+  },
+  "devDependencies": {
+    "broccoli": "^0.16.9",
+    "broccoli-cli": "^1.0.0",
+    "chai": "1.x",
+    "css-parse": "2.x",
+    "mocha": "2.x",
+    "stylus": "0.49.x"
+  }
+}
