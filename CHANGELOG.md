@@ -1,3 +1,7 @@
+# 0.2.0
+* Upgrade dependencies package Stylus and Mocha
+* Call rupture in build
+
 # 0.1.1
 * Fix mocha tests
 

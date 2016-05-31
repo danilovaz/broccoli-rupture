@@ -8,7 +8,8 @@
 'use strict';
 
 var Plugin = require('broccoli-plugin');
-var rupt = require('rupture');
+var stylus = require('stylus');
+var rupture = require('rupture');
 
 RuptureFilter.prototype = Object.create(Plugin.prototype);
 RuptureFilter.prototype.constructor = RuptureFilter;
@@ -20,6 +21,7 @@ function RuptureFilter(inputNode) {
 
 RuptureFilter.prototype.build = function() {
   // Build from this.inputPaths[0] to this.outputPath
+  return rupture.rupture();
 };
 
 module.exports = RuptureFilter;
