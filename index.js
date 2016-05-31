@@ -20,8 +20,7 @@ function RuptureFilter(inputNode) {
 }
 
 RuptureFilter.prototype.build = function() {
-  // Build from this.inputPaths[0] to this.outputPath
-  return rupture.rupture();
+  return rupture();
 };
 
 module.exports = RuptureFilter;
